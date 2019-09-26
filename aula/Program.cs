@@ -6,19 +6,25 @@ namespace aula
     {
         static void Main(string[] args)
         {
-            
-
-            int [] vetor = new int[] { 1, 2, 3, 4, 5 ,6 };
-
-            for (int i=0;i<6;i++){
-             if  (vetor[i] % 2 == 0)  {
-                 Console.WriteLine("Seu número é par");
-           
-            } else { 
-                 Console.WriteLine("Seu número é impar");
+            int[] vetor = new int[6];
+            int pares = 0;
+            int impares=0;
+            for (int cont =0; cont <6; cont++){
+                Console.Write("Digite um número: ");
+                vetor[cont] = int.Parse(Console.ReadLine());
             }
 
-            }
+             foreach (int num in  vetor )
+            {
+            if (num % 2 == 0){
+                pares+=1;
+            } else {
+                impares++;
+            }    
+
+          }
+
+          Console.WriteLine($"Voce tem {pares} numeros pares e {impares} numeros impares");
 
         }
     }

@@ -1,0 +1,11 @@
+C:\Users\49541849830\Documents\Exercicio\chuva\obj\Debug\netcoreapp2.2\chuva.csprojAssemblyReference.cache
+C:\Users\49541849830\Documents\Exercicio\chuva\obj\Debug\netcoreapp2.2\chuva.csproj.CoreCompileInputs.cache
+C:\Users\49541849830\Documents\Exercicio\chuva\obj\Debug\netcoreapp2.2\chuva.AssemblyInfoInputs.cache
+C:\Users\49541849830\Documents\Exercicio\chuva\obj\Debug\netcoreapp2.2\chuva.AssemblyInfo.cs
+C:\Users\49541849830\Documents\Exercicio\chuva\bin\Debug\netcoreapp2.2\chuva.deps.json
+C:\Users\49541849830\Documents\Exercicio\chuva\bin\Debug\netcoreapp2.2\chuva.runtimeconfig.json
+C:\Users\49541849830\Documents\Exercicio\chuva\bin\Debug\netcoreapp2.2\chuva.runtimeconfig.dev.json
+C:\Users\49541849830\Documents\Exercicio\chuva\bin\Debug\netcoreapp2.2\chuva.dll
+C:\Users\49541849830\Documents\Exercicio\chuva\bin\Debug\netcoreapp2.2\chuva.pdb
+C:\Users\49541849830\Documents\Exercicio\chuva\obj\Debug\netcoreapp2.2\chuva.dll
+C:\Users\49541849830\Documents\Exercicio\chuva\obj\Debug\netcoreapp2.2\chuva.pdb
