@@ -1,5 +1,5 @@
 ﻿using System;
-
+using MateODragao.Models;
 namespace MateODragao {
     class Program {
         static void Main (string[] args) {
@@ -21,17 +21,8 @@ namespace MateODragao {
 
                 case "1":
                     Console.Clear (); //limpar a tela do jogo 
-                    Guerreiro guerreiro = new Guerreiro (); //classe do Guerreiro
-                    guerreiro.Nome = "Eduardo"; //declarando as caracteristicas do guerreiro 
-                    guerreiro.Sobrenome = "Valente";
-                    guerreiro.CidadeNatal = "São Paulo";
-                    guerreiro.DataNascimento = DateTime.Parse ("18/05/2001");
-                    guerreiro.FerramenteAtaque = "Espada";
-                    guerreiro.FerramentaProtecao = "Escudo de ferro";
-                    guerreiro.Forca = 2;
-                    guerreiro.Destreza = 4;
-                    guerreiro.Inteligencia = 2;
-                    guerreiro.Vida = 20;
+
+                    Guerreiro guerreiro = CriarGuerreiro();           /*utilizando o metodo criar guerreiro */
 
                     Dragao dragao = new Dragao (); 
 
@@ -41,13 +32,9 @@ namespace MateODragao {
                     dragao.Inteligencia = 3;
                     dragao.Vida = 300;
                     /* INICIO -Primeiro Diálogo */
-                    System.Console.WriteLine ($"{guerreiro.Nome.ToUpper()}:{dragao.Nome},seu loco! Vim-lhe derrotar-te-lhe!"); // toUpper =pegar a frase e jogar para maiusculo 
-                    System.Console.WriteLine ($"{dragao.Nome.Toupper()}: kkkk! Humano tolinho.Quem pensas que és?");
-
-                    System.Console.WriteLine ();
-                    System.Console.WriteLine ("Aperte ENTER para prosseguir");
-                    Console.ReadLine ();
-
+                    CriarDialogo(guerreiro.Nome,$"{dragao.Nome},seu loco! Vim-lhe derrotar-te-lhe!"); // toUpper =pegar a frase e jogar para maiusculo 
+                    System.Console.WriteLine ($"{dragao.Nome.ToUpper()}: kkkk! Humano tolinho.Quem pensas que és?");
+                    FinalizarDialogo();
                     /*  FIM - Primeiro Diálogo  */
 
                     /* INICIO - Segundo Diálogo */
@@ -55,13 +42,8 @@ namespace MateODragao {
                     System.Console.WriteLine ($"{guerreiro.Nome.ToUpper()}: Eu sou {guerreiro.Nome}! Da casa {guerreiro.Sobrenome},ó criatura morfética!");
                     System.Console.WriteLine ($"{guerreiro.Nome.ToUpper()}:vVim de {guerreiro.CidadeNatal} para derrotar-te e mostrar meu valor!");
                     System.Console.WriteLine ($"{dragao.Nome.ToUpper()} : Quem ? de onde ? Bom,que seja ...fritar-te-ei e devorar-te-ei ");
-
-                    System.Console.WriteLine ();
-                    System.Console.WriteLine ("Aperte ENTER para prosseguir");
-                    Console.ReadLine ();
-
+                    FinalizarDialogo();
                     /* FIM - Segundo Diágolo  */
-                    Console.Clear ();
                     bool jogadorAtacaPrimeiro =
                         guerreiro.Destreza > dragao.Destreza? true : false;
 
@@ -111,8 +93,7 @@ namespace MateODragao {
 
                                 break;
                         }
-                        System.Console.WriteLine ("Aperte ENTER para prosseguir");
-                        Console.ReadLine ();
+                        FinalizarDialogo();
 
                         while (dragao.Vida > 0 && guerreiro.Vida > 0 && jogadorNaoCorreu) {
                             Console.Clear ();
@@ -136,9 +117,7 @@ namespace MateODragao {
                             } else {
                                 System.Console.WriteLine ($"{guerreiro.Nome.ToUpper()}: Vem tranquilo!!!!!!");
                             }
-                            System.Console.WriteLine ();
-                            System.Console.WriteLine ("Aperte ENTER para prosseguir");
-                            Console.ReadLine ();
+                            FinalizarDialogo();
 
                             /*INICIO - Turno Jogador */
 
@@ -149,17 +128,17 @@ namespace MateODragao {
                             System.Console.WriteLine ("  1 - Atacar ");
                             System.Console.WriteLine ("  2 - Fugir ");
 
-                            string opcaoBatalhaJogador = Console.ReadLine ();
+                            opcaoBatalhaJogador = Console.ReadLine();
 
                             switch (opcaoBatalhaJogador) {
 
                                 case "1":
-                                     geradorNumeroAleatorio = new Random ();
-                                     numeroAleatorioJogador = geradorNumeroAleatorio.Next (0, 5);
-                                     numeroAleatorioDragao = geradorNumeroAleatorio.Next (0, 5);
+                                geradorNumeroAleatorio = new Random ();
+                                numeroAleatorioJogador = geradorNumeroAleatorio.Next (0, 5);
+                                numeroAleatorioDragao = geradorNumeroAleatorio.Next (0, 5);
 
-                                     guerreiroDestrezaTotal = guerreiro.Destreza + numeroAleatorioJogador;
-                                     dragaoDestrezaTotal = dragao.Destreza + numeroAleatorioDragao;
+                                guerreiroDestrezaTotal = guerreiro.Destreza + numeroAleatorioJogador;
+                                dragaoDestrezaTotal = dragao.Destreza + numeroAleatorioDragao;
 
                                     if (guerreiroDestrezaTotal > dragaoDestrezaTotal) {
                                         System.Console.WriteLine ($"{guerreiro.Nome.ToUpper()}: Toma essa Lagardo!!!!!!!");
@@ -178,12 +157,9 @@ namespace MateODragao {
                                     if (dragao.Vida <=0) {
                                         System.Console.WriteLine("Dragão murrrreu!");
                                     }
-                                    System.Console.WriteLine();
-                                    System.Console.WriteLine("Aperte o ENTER para prosseguir");
-                                    Console.ReadLine();
-                                    Console.Clear();
+                                    FinalizarDialogo();
                                     break;
-                                   
+                            
 
                                 case "2":
                                     jogadorNaoCorreu = false;
@@ -192,8 +168,7 @@ namespace MateODragao {
 
                                     break;
                             }
-                            System.Console.WriteLine ("Aperte ENTER para prosseguir");
-                            Console.ReadLine ();
+                            FinalizarDialogo();
 
                             /*FIM - Turno Jogador  */
                         }
@@ -214,5 +189,32 @@ namespace MateODragao {
             }while(jogadorNaoDesistiu);
 
         }
+    
+        private static void CriarDialogo(string nome,string frase)                 /* Metodo sempre tem um verbo no infinitivo */
+        {
+            System.Console.WriteLine($"{nome.ToUpper()}:{frase}!");
+        }
+        private static void FinalizarDialogo(){    /*metodo para finalizar o jogo */
+                System.Console.WriteLine ();
+                System.Console.WriteLine ("Aperte ENTER para prosseguir");
+                Console.ReadLine ();
+                Console.Clear ();
+        }
+        private static Guerreiro CriarGuerreiro() {
+        Guerreiro guerreiro = new Guerreiro (); 
+                    guerreiro.Nome = "Eduardo";  
+                    guerreiro.Sobrenome = "Valente";
+                    guerreiro.CidadeNatal = "São Paulo";
+                    guerreiro.DataNascimento = DateTime.Parse ("18/05/2001");
+                    guerreiro.FerramenteAtaque = "Espada";
+                    guerreiro.FerramentaProtecao = "Escudo de ferro";
+                    guerreiro.Forca = 2;
+                    guerreiro.Destreza = 4;
+                    guerreiro.Inteligencia = 2;
+                    guerreiro.Vida = 20;
+
+                    return guerreiro;
+        }
+
     }
 }
