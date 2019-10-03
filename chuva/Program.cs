@@ -10,29 +10,29 @@ namespace chuva
             double maior=0;
             double menor=0;
 
-             for (int i = 0;i < 12;i++){
-                 Console.Write($"Digite a temperatura do mes {i+1}:");
-                 temperaturas[i] = double.Parse(Console.ReadLine());
-             }
+            for (int i = 0;i < 12;i++){
+                Console.Write($"Digite a temperatura do mes {i+1}:");
+                temperaturas[i] = double.Parse(Console.ReadLine());
+            }
 
-             maior = temperaturas [0];
-             menor = temperaturas [0];
+            maior = temperaturas [0];
+            menor = temperaturas [0];
 
                 foreach (double temp in temperaturas)
 
                 {
-                     if(temp>maior){
-                         maior = temp;
-                     }else if(temp<menor){
-                         menor = temp;
-                     }
+                    if(temp>maior){
+                        maior = temp;
+                    }else if(temp<menor){
+                        menor = temp;
+                    }
 
                 }
 
                 Console.WriteLine($"A maior temperaatura é {maior}");
                 Console.WriteLine($"A menor temperatura é {menor}");
 
-             }
+            }
 
 
         }
