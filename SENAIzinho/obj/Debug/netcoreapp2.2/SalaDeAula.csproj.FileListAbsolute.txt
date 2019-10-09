@@ -1,0 +1,11 @@
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\bin\Debug\netcoreapp2.2\SalaDeAula.deps.json
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\bin\Debug\netcoreapp2.2\SalaDeAula.runtimeconfig.json
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\bin\Debug\netcoreapp2.2\SalaDeAula.runtimeconfig.dev.json
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\bin\Debug\netcoreapp2.2\SalaDeAula.dll
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\bin\Debug\netcoreapp2.2\SalaDeAula.pdb
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\obj\Debug\netcoreapp2.2\SalaDeAula.csprojAssemblyReference.cache
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\obj\Debug\netcoreapp2.2\SalaDeAula.csproj.CoreCompileInputs.cache
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\obj\Debug\netcoreapp2.2\SalaDeAula.AssemblyInfoInputs.cache
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\obj\Debug\netcoreapp2.2\SalaDeAula.AssemblyInfo.cs
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\obj\Debug\netcoreapp2.2\SalaDeAula.dll
+C:\Users\49541849830\Documents\Exercicio\SalaDeAula\obj\Debug\netcoreapp2.2\SalaDeAula.pdb
