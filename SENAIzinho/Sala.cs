@@ -4,8 +4,8 @@ using System.Text;
 
 namespace SENAIzinho
 {
-    class Aluno
-    {
+class Aluno
+{
         //Atributos da Sala.cs
         public int capacidadeAtual;   
         public int capacidadeTotal; 

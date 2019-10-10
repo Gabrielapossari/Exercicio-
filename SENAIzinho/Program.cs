@@ -18,7 +18,9 @@ namespace SENAIzinho
 
 
             int opcao = 0;
-            System.Console.WriteLine("*****************Cadastro de Alunos***************");
+            System.Console.WriteLine("**************************************************");
+            System.Console.WriteLine("************** CADASTRO DOS ALUNOS ***************");
+            System.Console.WriteLine("**************************************************");
             System.Console.WriteLine("Digite uma opção");
             System.Console.WriteLine("1 - Cadastrar Aluno");
             System.Console.WriteLine("2 - Alocar Aluno");
@@ -39,7 +41,7 @@ namespace SENAIzinho
                     System.Console.WriteLine("Qual o número da sua sala?");
                     int NumeroSala = int.Parse(Console.ReadLine());
                     System.Console.WriteLine("Cadastro do aluno efetivado!");
-                    List <Alunos> lista = new List<Alunos>();
+                    
 
                         break;
                     case 2:
