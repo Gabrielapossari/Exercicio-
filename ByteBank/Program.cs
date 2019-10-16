@@ -63,12 +63,11 @@ namespace ByteBank
             double valor = double.Parse(Console.ReadLine());
             saldo = contaCorrente.Deposito(valor);
             bool depdoValido = false;
-            double valor;
             do{
                 Console.Write("Digite o valor do Deposito: ");
-                double valor = double.Parse(Console.ReadLine());
+                double deposito = double.Parse(Console.ReadLine());
                 
-                if (valor >= 0){
+                if (deposito >= 0){
                     depdoValido = true;
                 } else {
                     Console.WriteLine("O deposito não pode ser negativo");

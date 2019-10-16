@@ -20,6 +20,9 @@ class Aluno
         public string CadastrarAluno (string aluno){
 
         }
+}
+}
+
         
 
 
