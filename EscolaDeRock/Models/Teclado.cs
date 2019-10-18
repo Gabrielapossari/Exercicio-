@@ -8,7 +8,7 @@ namespace EscolaDeRock.Models
     {
         public bool TocarAcordes()
         {
-            System.Console.WriteLine("Tocando os acordes");
+            System.Console.WriteLine("Tocando os acordes do teclado");
             return true;
         }
         public bool TocarSolo()
