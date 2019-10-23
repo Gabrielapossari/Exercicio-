@@ -1,0 +1,4 @@
+C:\Users\49541849830\Documents\Exercicio\TEMPdp\obj\Debug\netcoreapp2.2\TEMPdp.csprojAssemblyReference.cache
+C:\Users\49541849830\Documents\Exercicio\TEMPdp\obj\Debug\netcoreapp2.2\TEMPdp.csproj.CoreCompileInputs.cache
+C:\Users\49541849830\Documents\Exercicio\TEMPdp\obj\Debug\netcoreapp2.2\TEMPdp.AssemblyInfoInputs.cache
+C:\Users\49541849830\Documents\Exercicio\TEMPdp\obj\Debug\netcoreapp2.2\TEMPdp.AssemblyInfo.cs

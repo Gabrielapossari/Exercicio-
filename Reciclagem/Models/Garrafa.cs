@@ -1,18 +1,19 @@
 using System;
-using Reciclagem;
-
+using Reciclagem.Models;
+using Reciclagem.Interface.ILixo;
 namespace Reciclagem.Models
 {
-    class Garrafa
+    public class Garrafa
         {
-            public string Nome {get; set;}
-            public string CorDaLixeira {get; set;}
-        public void lixo (string Nome,string CorDaLixeira)
-        {
-            this.Nome=Nome;
-            this.CorDaLixeira=CorDaLixeira;
-        }
-        
-        
+            public string Nome;
+            public string CorDaLixeira;
+            public Garrafa (string Nome,string CorDaLixeira)
+            {
+                this.Nome=Nome;
+                this.CorDaLixeira=CorDaLixeira;
+            }
+            public void  MostrarTexto (string Nome,string CorDaLixeira){
+                System.Console.WriteLine($"O lixo de {Nome} é descartado na lixeira {CorDaLixeira}.");
+            }
         }
     }

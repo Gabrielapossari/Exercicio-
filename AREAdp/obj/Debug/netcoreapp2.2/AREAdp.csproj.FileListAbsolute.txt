@@ -1,0 +1,11 @@
+C:\Users\49541849830\Documents\Exercicio\AREAdp\obj\Debug\netcoreapp2.2\AREAdp.csprojAssemblyReference.cache
+C:\Users\49541849830\Documents\Exercicio\AREAdp\obj\Debug\netcoreapp2.2\AREAdp.csproj.CoreCompileInputs.cache
+C:\Users\49541849830\Documents\Exercicio\AREAdp\obj\Debug\netcoreapp2.2\AREAdp.AssemblyInfoInputs.cache
+C:\Users\49541849830\Documents\Exercicio\AREAdp\obj\Debug\netcoreapp2.2\AREAdp.AssemblyInfo.cs
+C:\Users\49541849830\Documents\Exercicio\AREAdp\bin\Debug\netcoreapp2.2\AREAdp.deps.json
+C:\Users\49541849830\Documents\Exercicio\AREAdp\bin\Debug\netcoreapp2.2\AREAdp.runtimeconfig.json
+C:\Users\49541849830\Documents\Exercicio\AREAdp\bin\Debug\netcoreapp2.2\AREAdp.runtimeconfig.dev.json
+C:\Users\49541849830\Documents\Exercicio\AREAdp\bin\Debug\netcoreapp2.2\AREAdp.dll
+C:\Users\49541849830\Documents\Exercicio\AREAdp\bin\Debug\netcoreapp2.2\AREAdp.pdb
+C:\Users\49541849830\Documents\Exercicio\AREAdp\obj\Debug\netcoreapp2.2\AREAdp.dll
+C:\Users\49541849830\Documents\Exercicio\AREAdp\obj\Debug\netcoreapp2.2\AREAdp.pdb
